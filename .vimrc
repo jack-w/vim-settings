@@ -11,6 +11,8 @@ set mouse=a
 set ruler
 set rulerformat=%-(%l/%L%)%=\ %P
 set showmatch
+
+let g:tex_flavor = "latex"
 "}}}
 
 "general abbreviations {{{

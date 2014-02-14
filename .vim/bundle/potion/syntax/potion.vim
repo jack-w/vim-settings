@@ -10,6 +10,9 @@ syntax keyword potionFunction print join string
 
 syntax match potionComment "\v#.*$"
 
+syntax region potionString start=/\v"/ skip=/\v\\./ end=/\v"/
+syntax region potionString start=/\v'/ skip=/\v\\./ end=/\v'/
+
 syntax match potionOperator "\v\="
 syntax match potionOperator "\v\*"
 syntax match potionOperator "\v/"
@@ -32,6 +35,7 @@ syntax match potionNumber "\v[0-9].*[e]-[0-9]"
 highlight link potionKeyword Keyword
 highlight link potionFunction Function
 highlight link potionComment Comment
+highlight link potionString String
 highlight link potionOperator Operator
 highlight link potionNumber Number
 
