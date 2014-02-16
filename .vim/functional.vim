@@ -4,7 +4,6 @@ function! Sorted(l)
     return new_list
 endfunction
 
-
 function! Reversed(l)
     let new_list = deepcopy(a:l)
     call reverse(new_list)
