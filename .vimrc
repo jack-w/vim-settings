@@ -43,15 +43,40 @@ augroup END
 "general mappings {{{
 let mapleader = "-"
 let maplocalleader = "@"
+" edit and source the .vimrc file
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>el :source $MYVIMRC<cr>
+" move line one up or down
 nnoremap <leader>d <esc>ddp
 nnoremap <leader>u <esc>ddkP
-
+" open last buffer in split
 nnoremap <leader>bu :execute "rightbelow split " . bufname("#") <cr>
-
+" comment around current word
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 vnoremap <leader>" <esc>a"<esc>hbi"<esc>lel
+
+" highlight trailing whitespaces
+highlight Error ctermbg=red guibg=red
+nnoremap <leader>wh :match Error /\v\ +$/<cr>
+" remove the highlighting again
+nnoremap <leader>wH :match Ignore /\v\ +$/<cr>
+" insert \v when searching
+nnoremap / /\v
+nnoremap ? ?\v
+" toggle quickfix
+nnoremap <leader>q :call <SID>QuickfixToggle()<cr>
+let g:quickfix_is_open=0
+function! s:QuickfixToggle()
+    if g:quickfix_is_open
+        cclose
+        let g:quickfix_is_open=0
+        execute g:quickfix_return_to_window ."wincmd w"
+    else
+        let g:quickfix_return_to_window = winnr()
+        copen
+        let g:quickfix_is_open=1
+    endif
+endfunction
 "}}}
 
 "filetype mappings {{{

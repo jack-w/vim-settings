@@ -1,0 +1,1020 @@
+# Diese viminfo-Datei wurde von Vim 7.3 generiert.
+# Sie können sie verändern, wenn Sie vorsichtig vorgehen!
+
+# Wert von 'encoding', als diese Datei geschrieben wurde
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Letztes Suchmuster:
+~MSle0~/shutd
+
+# Letzte ersetzte Zeichenkette:
+$
+
+# Befehlszeile Geschichte (neueste bis älteste):
+:q
+:help wildcard
+:help globpath()
+:help filename-modifiers
+:help fnamemodify()
+:help expand()
+:echo split(globpath('.','**'),'\n')
+:echo split(globpath('.','*.txt'),'\n')
+:echo split(globpath('.','*'),'\n')
+:echo globpath('.','*')
+:echo globalpath('.','*')
+:echom fnamemodify('foo.txt',':p')
+:echom expand('%:p')
+:echom expand('%')
+:wq
+:w
+:echo myd
+:let myd.a = 15
+:help map()
+:echo Assoc(myd,'b', 11)
+:source %
+:echo Assoc(myd,'b', 5)
+:echo remove(myd, 'a')
+:help remove()
+:let myd.a = 5
+:let myd['a'] = 11
+:let myd[a] = 11
+:let myd =  {'a': 5, 'b': 6}
+:help type()
+:echo Removed(function('len'),mylist)
+:echo mylist
+:echo li
+:echo Filtered(function('len'), mylist)
+:echo Mapped(function("Reversed"),mylist)
+:let mylist = [[1,2],[], ['foo'],[]]
+:let mylist = [1,2],[], ['foo'],[]]
+:echo funcs[1](li, 1)
+:let funcs = [function("Append"), function("Pop")]
+:echo Myfunc([1,2],3)
+:let Myfunc = function("Append")
+:echo Pop(li,5)
+:echo Assoc(li,5,'a')
+:echo Append(li,'a')
+:echo Reversed(li)
+:echo Sorted(li)
+:echo Sort(li)
+:let li = [1,2,5,4,3,8,6,7]
+:echo Sorted([3,2,4,1])
+:echo Sorted([3,2.4.1])
+:help <sid>
+
+# Suchausdruck Geschichte (neueste bis älteste):
+??\v
+?/border
+?/4
+?/Wor
+?/works
+?/rows
+?/shutd
+?/name="border"
+?/name=border
+?/width
+?/Window
+?/Border
+?/window
+? \<me\>
+? \Vbegin\%#
+? \Vitem\%#
+? \Vsub\%#
+? \Vtab\%#
+? \Vif\%#
+? \Vprogram\%#
+? \Vdo\%#
+? \Vsnip\%#
+?/corre
+?/corr
+?/correl
+?/ide
+?/iden
+?/allocate(se
+?/init
+?/identi
+?/read_d
+?/nclusters
+?/allocate
+?/in
+?/print_pos
+?/print
+?/open
+?/comm
+
+# Ausdruck Geschichte (neueste bis älteste):
+
+# Eingabe-Zeile Geschichte (neueste bis älteste):
+
+# Eingabe-Zeile Geschichte (neueste bis älteste):
+
+# Register:
+""0	LINE	0
+	        let g:quickfix_return_to_window = winnr()
+"1	LINE	0
+	    elseif type_l == 4
+	        let new_list[a:i] = a:val
+	    endif
+"2	LINE	0
+	    if type_l == 3
+"3	LINE	0
+	    let type_l = type(a:l)
+"4	LINE	0
+	    endif
+"5	LINE	0
+	        
+"6	LINE	0
+	    elseif
+"7	LINE	0
+	    if type_l == 3
+"8	LINE	0
+	    call remove(new_list,a:i)
+"9	LINE	0
+	    call re new_list[a:i] = a:val 
+"-	CHAR	0
+	n
+
+# Datei-Marken:
+'0  3  0  ~/.vim/bundle/potion/ftplugin/potion/folding.vim
+'1  16  18  ~/.vim/functional.vim
+'2  1  2  ~/.vim/bundle/grep/plugin/grep-operator.vim
+'3  75  26  ~/.vimrc
+'4  66  13  ~/.vimrc
+'5  27  23  ~/.vim/functional.vim
+'6  48  10  ~/.vim/functional.vim
+'7  3  3  /tmp/test.py
+'8  11  4  /tmp/test.py
+'9  7  7  /tmp/test.py
+
+# Geschichte (neueste zuerst):
+-'  3  0  ~/.vim/bundle/potion/ftplugin/potion/folding.vim
+-'  1  0  ~/.vim/bundle/potion/ftplugin/potion/folding.vim
+-'  16  18  ~/.vim/functional.vim
+-'  1  0  ~/.vim/functional.vim
+-'  1  2  ~/.vim/bundle/grep/plugin/grep-operator.vim
+-'  75  26  ~/.vimrc
+-'  3  7  ~/.vim/bundle/grep/plugin/grep-operator.vim
+-'  4  0  ~/.vim/bundle/grep/plugin/grep-operator.vim
+-'  66  13  ~/.vimrc
+-'  77  23  ~/.vimrc
+-'  27  23  ~/.vim/functional.vim
+-'  28  10  ~/.vim/functional.vim
+-'  48  10  ~/.vim/functional.vim
+-'  24  3  ~/.vim/functional.vim
+-'  21  8  ~/.vim/functional.vim
+-'  49  0  ~/.vim/functional.vim
+-'  3  3  /tmp/test.py
+-'  1  0  /tmp/test.py
+-'  11  4  /tmp/test.py
+-'  7  7  /tmp/test.py
+-'  9  8  /tmp/test.py
+-'  2  0  /tmp/test.py
+-'  6  0  /tmp/test.py
+-'  13  0  /tmp/test.py
+-'  4  0  /tmp/test.py
+-'  1  0  /tmp/test.tex
+-'  65  60  ~/bin/updatePackageList.sh
+-'  1  0  ~/bin/updatePackageList.sh
+-'  88  0  ~/.xbindkeysrc
+-'  1  0  ~/.xbindkeysrc
+-'  257  0  /usr/share/vim/vim74/doc/usr_20.txt
+-'  356  15  /usr/share/vim/vim74/doc/usr_12.txt
+-'  1  0  /usr/share/vim/vim74/doc/usr_20.txt
+-'  68  11  /usr/share/vim/vim74/doc/help.txt
+-'  1  0  /usr/share/vim/vim74/doc/usr_12.txt
+-'  1  7  ~/bin/fibonacci.cpp
+-'  2  0  ~/bin/fibonacci.cpp
+-'  89  19  /usr/share/vim/vim74/doc/usr_24.txt
+-'  209  2  /usr/share/vim/vim74/doc/usr_toc.txt
+-'  1  0  /usr/share/vim/vim74/doc/usr_toc.txt
+-'  1  0  ~/bin/chws.sh
+-'  283  9  ~/.bashrc
+-'  77  4  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  59  34  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  56  49  /etc/apt/sources.list
+-'  1  0  /media/jack/7d08d2b2-7eb1-4b61-8a97-9b32827837a7/usr/share/xsessions/ubuntu-2d.desktop
+-'  66  39  /usr/share/themes/Greybird/metacity-1/metacity-theme-3.xml
+-'  1  0  /usr/share/themes/Greybird/metacity-1/metacity-theme-3.xml
+-'  66  39  /usr/share/themes/Greybird/metacity-1/metacity-theme-2.xml
+-'  1  0  /usr/share/themes/Greybird/metacity-1/metacity-theme-2.xml
+-'  64  39  /usr/share/themes/Orion/metacity-1/metacity-theme-3.xml
+-'  1  0  /usr/share/themes/Orion/metacity-1/metacity-theme-3.xml
+-'  72  39  /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+-'  23  37  /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+-'  24  39  /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+-'  64  26  /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+-'  63  22  /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+-'  46  22  /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+-'  42  23  /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+-'  37  23  /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+-'  36  22  /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+-'  1  0  /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+-'  1  0  /usr/share/themes/Orion/xfwm4/themerc
+-'  1  0  /var/cache/apt/archives/option-window
+-'  760  6  ~/cluster/rep/cluster.c
+-'  1  0  ~/cluster/rep/cluster.c
+-'  16  40  /usr/share/themes/Ambiance/metacity-1/metacity-theme-1.xml
+-'  1  0  /usr/share/themes/Ambiance/metacity-1/metacity-theme-1.xml
+-'  16  40  /usr/share/themes/Radiance/metacity-1/metacity-theme-1.xml
+-'  1  0  /usr/share/themes/Radiance/metacity-1/metacity-theme-1.xml
+-'  1  0  /usr/share/themes/Radiance/gtk-2.0/apps/gnome-terminal.rc
+-'  1  0  /usr/share/themes/Radiance/gtk-2.0/gtkrc
+-'  15  38  /usr/share/themes/Radiance/metacity-1/metacity-theme-1.xml
+-'  1  0  /usr/share/ubuntu-tweak/ubuntu-tweak-daemon
+-'  152  0  /usr/share/ubuntu-tweak/script-worker
+-'  1  0  /usr/share/ubuntu-tweak/script-worker
+-'  3  79  /usr/share/ubuntu-tweak/scripts/browse-as-root
+-'  1  0  /usr/share/ubuntu-tweak/scripts/browse-as-root
+-'  36  20  /usr/share/ubuntu-tweak/ui/preferences.ui
+-'  1  0  /usr/share/ubuntu-tweak/ui/preferences.ui
+-'  1  0  /usr/share/ubuntu-tweak/ui/window.ui
+-'  13  1  /usr/share/unity-2d/spread/Windows.qml
+-'  1  0  /usr/share/unity-2d/spread/Windows.qml
+-'  90  14  /usr/share/unity-2d/spread/Window.qml
+-'  129  41  /usr/share/unity-2d/spread/Window.qml
+-'  98  8  /usr/share/unity-2d/spread/Window.qml
+-'  97  8  /usr/share/unity-2d/spread/Window.qml
+-'  59  0  /usr/share/unity-2d/spread/Window.qml
+-'  1  0  /usr/share/unity-2d/spread/Window.qml
+-'  89  0  /usr/share/X11/xman.help
+-'  1  0  /usr/share/X11/xman.help
+-'  1  0  /usr/share/X11/xkb/geometry.dir
+-'  1  0  /usr/share/X11/locale/locale.dir
+-'  1  0  /usr/share/X11/xorg.conf.d/51-synaptics-quirks.conf
+-'  1  0  /usr/share/X11/xorg.conf.d/10-evdev.conf
+-'  1  0  /usr/share/X11/rgb.txt
+-'  1  2  ~/.vim/bundle/grep/plugin/grep-operator.vim
+
+# Geschichte der Markierungen innerhalb von Dateien (neueste zuerst):
+
+> ~/.vim/bundle/potion/ftplugin/potion/folding.vim
+	"	3	0
+
+> ~/.vim/test.pn
+	"	12	14
+	^	6	1
+	.	7	0
+	+	1	0
+	+	1	0
+	+	7	0
+
+> /usr/share/vim/vim73/doc/fold.txt
+	"	404	18
+
+> /usr/share/vim/vim73/doc/options.txt
+	"	3128	0
+
+> ~/.vim/functional.vim
+	"	16	18
+	.	22	0
+	+	5	11
+	+	7	0
+	+	7	17
+	+	9	15
+	+	49	0
+	+	12	0
+	+	13	21
+	+	15	23
+	+	19	0
+	+	18	0
+	+	19	19
+	+	21	30
+	+	23	0
+	+	21	30
+	+	24	0
+	+	24	0
+	+	25	17
+	+	28	28
+	+	32	0
+	+	31	0
+	+	32	20
+	+	34	47
+	+	38	0
+	+	37	0
+	+	38	17
+	+	40	14
+	+	44	0
+	+	43	0
+	+	44	16
+	+	46	29
+	+	21	18
+	+	21	0
+	+	22	14
+	+	21	22
+	+	21	12
+	+	22	8
+	+	22	31
+	+	27	0
+	+	28	17
+	+	28	0
+	+	29	8
+	+	29	7
+	+	28	0
+	+	29	0
+	+	28	0
+	+	21	22
+	+	22	24
+	+	21	0
+	+	22	0
+
+> /usr/share/vim/vim73/doc/eval.txt
+	"	3503	42
+
+> /usr/share/vim/vim73/doc/cmdline.txt
+	"	849	43
+
+> /usr/share/vim/vim73/doc/editing.txt
+	"	392	23
+
+> ~/.vim/bundle/grep/plugin/grep-operator.vim
+	"	1	2
+	^	25	2
+	.	18	0
+	+	5	0
+	+	25	0
+	+	21	0
+	+	18	0
+
+> ~/.vimrc
+	"	75	26
+	^	66	17
+	.	66	0
+	+	17	0
+	+	69	0
+	+	67	0
+	+	79	10
+	+	69	8
+	+	78	8
+	+	67	32
+	+	69	17
+	+	71	13
+	+	67	17
+	+	72	29
+	+	76	12
+	+	77	0
+	+	78	0
+	+	77	31
+	+	68	0
+	+	73	54
+	+	75	48
+	+	67	29
+	+	69	11
+	+	66	0
+
+> /usr/share/vim/vim74/doc/eval.txt
+	"	6059	7
+
+> /tmp/test.py
+	"	3	3
+	.	7	0
+	+	4	18
+	+	5	10
+	+	4	0
+	+	1	5
+	+	13	0
+	+	4	0
+	+	6	0
+	+	2	9
+	+	13	0
+	+	11	12
+	+	2	10
+	+	3	20
+	+	12	0
+	+	13	0
+	+	1	0
+	+	3	0
+	+	7	4
+	+	6	0
+	+	7	11
+	+	9	0
+	+	7	7
+	+	11	16
+	+	7	0
+	+	7	0
+
+> /usr/share/vim/vim74/doc/map.txt
+	"	1101	38
+
+> /usr/share/vim/vim74/doc/various.txt
+	"	107	12
+
+> /usr/share/vim/vim74/doc/options.txt
+	"	3056	10
+
+> ~/.vim/bundle/tex/ftplugin/tex/texlog.vim
+	"	2	0
+
+> ~/.vim/bundle/tex/ftplugin/tex/running.vim
+	"	2	4
+
+> ~/.vim/bundle/tlib_vim/plugin/02tlib.vim
+	"	52	0
+
+> ~/.vim/plugin/grep/grep-operator.vim
+	"	1	4
+
+> ~/.vim/bundle/grep/grep-operator.vim
+	"	1	5
+
+> ~/.vim/plugin/grep-operator.vim
+	"	20	4
+	^	20	5
+	.	20	0
+	+	3	33
+	+	4	37
+	+	3	36
+	+	4	35
+	+	3	44
+	+	4	48
+	+	3	19
+	+	4	19
+	+	3	19
+	+	9	0
+	+	8	33
+	+	22	34
+	+	2	0
+	+	2	8
+	+	3	0
+	+	22	17
+	+	22	17
+	+	3	26
+	+	4	28
+	+	3	20
+	+	4	20
+	+	3	47
+	+	4	51
+	+	3	45
+	+	4	49
+	+	3	20
+	+	4	28
+	+	3	48
+	+	4	28
+	+	3	0
+	+	4	0
+	+	3	48
+	+	4	52
+	+	3	25
+	+	4	29
+	+	3	17
+	+	4	17
+	+	3	18
+	+	4	18
+	+	1	41
+	+	2	34
+	+	5	0
+	+	6	0
+	+	5	30
+	+	20	0
+
+> /usr/share/vim/vim74/doc/windows.txt
+	"	274	31
+
+> /usr/share/vim/vim74/doc/repeat.txt
+	"	101	7
+
+> /usr/share/vim/vim74/doc/editing.txt
+	"	1064	7
+
+> /usr/share/vim/vim74/doc/cmdline.txt
+	"	789	10
+
+> /usr/share/vim/vim74/doc/quickfix.txt
+	"	312	35
+
+> ~/.vim/bundle/grep-operator.vim
+	"	1	0
+
+> ~/.vim/bundle/plugin/grep-operator.vim
+	"	1	0
+	^	15	11
+	.	15	10
+	+	5	16
+	+	16	11
+	+	2	60
+	+	4	27
+	+	5	21
+	+	13	55
+	+	14	8
+	+	1	0
+	+	15	10
+
+> /tmp/test.tex
+	"	1	0
+	^	1	0
+
+> ~/bin/updatePackageList.sh
+	"	65	60
+	^	65	61
+	.	65	61
+	+	65	0
+	+	64	21
+	+	65	61
+
+> ~/Arbeitsfläche/Packages
+	"	12	44
+
+> ~/.xbindkeysrc
+	"	88	0
+	^	80	16
+	.	80	15
+	+	46	14
+	+	47	14
+	+	58	0
+	+	50	24
+	+	54	4
+	+	54	22
+	+	55	13
+	+	57	1
+	+	58	18
+	+	65	0
+	+	81	0
+	+	62	0
+	+	66	0
+	+	69	0
+	+	81	0
+	+	62	16
+	+	63	13
+	+	64	15
+	+	66	16
+	+	67	13
+	+	68	15
+	+	70	16
+	+	71	13
+	+	72	16
+	+	74	94
+	+	76	6
+	+	78	119
+	+	80	15
+
+> ~/bin/chws.sh
+	"	5	17
+	^	5	18
+	.	5	17
+	+	8	8
+	+	7	42
+	+	12	0
+	+	11	13
+	+	14	0
+	+	12	10
+	+	14	37
+	+	15	37
+	+	14	37
+	+	16	25
+	+	15	39
+	+	17	13
+	+	3	5
+	+	4	5
+	+	4	4
+	+	14	44
+	+	38	18
+	+	18	9
+	+	19	31
+	+	23	9
+	+	25	30
+	+	27	30
+	+	24	14
+	+	25	32
+	+	24	26
+	+	26	48
+	+	27	0
+	+	29	9
+	+	30	30
+	+	3	5
+	+	4	5
+	+	4	91
+	+	4	4
+	+	4	90
+	+	3	85
+	+	4	0
+	+	5	17
+
+> /usr/share/vim/vim74/doc/usr_toc.txt
+	"	209	2
+
+> /usr/share/vim/vim74/doc/usr_24.txt
+	"	221	36
+
+> ~/bin/fibonacci.cpp
+	"	22	0
+	^	22	0
+	.	23	0
+	+	1	0
+	+	23	0
+	+	23	0
+
+> /usr/share/vim/vim74/doc/help.txt
+	"	68	11
+
+> /usr/share/vim/vim74/doc/usr_08.txt
+	"	251	0
+
+> /usr/share/vim/vim74/doc/usr_01.txt
+	"	191	0
+
+> /usr/share/vim/vim74/doc/tagsrch.txt
+	"	50	34
+
+> /usr/share/vim/vim74/doc/usr_12.txt
+	"	356	15
+
+> ~/echo.~
+	"	21	7
+	.	21	0
+	+	1	0
+	+	21	0
+
+> /usr/share/vim/vim74/doc/usr_20.txt
+	"	257	0
+
+> /usr/share/themes/Orion/metacity-1/metacity-theme-2.xml
+	"	71	22
+	^	72	40
+	.	65	39
+	+	23	37
+	+	23	0
+	+	64	37
+	+	65	39
+
+> /usr/share/themes/Orion/xfwm4/themerc
+	"	1	0
+
+> ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+	"	1	0
+
+> ~/.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
+	"	1	0
+
+> ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
+	"	1	0
+
+> ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mime-settings.xml
+	"	1	0
+
+> ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
+	"	3	19
+
+> ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+	"	3	19
+
+> ~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+	"	1	0
+
+> ~/.config/autostart/xbindkeys.desktop
+	"	8	24
+	^	3	14
+	.	3	13
+	+	2	13
+	+	3	13
+
+> ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+	"	1	0
+
+> ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+	"	118	14
+	^	114	48
+	.	114	47
+	+	114	47
+
+> ~/.config/xfce4/helpers.rc
+	"	1	0
+
+> ~/.config/xfce4/help.rc
+	"	1	0
+
+> ~/.config/xfce4/desktop/icons.screen0-1904x1039.rc
+	"	1	0
+
+> ~/.bashrc
+	"	283	9
+	^	58	129
+	.	58	128
+	+	129	0
+	+	130	0
+	+	136	0
+	+	130	21
+	+	266	14
+	+	274	0
+	+	275	0
+	+	274	15
+	+	276	16
+	+	278	15
+	+	280	0
+	+	282	36
+	+	281	11
+	+	286	11
+	+	86	17
+	+	35	22
+	+	59	0
+	+	58	99
+	+	233	0
+	+	58	128
+
+> /etc/apt/sources.list
+	"	59	34
+	^	59	35
+	.	59	34
+	+	59	34
+
+> /media/jack/7d08d2b2-7eb1-4b61-8a97-9b32827837a7/usr/share/xsessions/ubuntu-2d.desktop
+	"	1	0
+
+> /usr/share/themes/Greybird/metacity-1/metacity-theme-3.xml
+	"	66	39
+	^	66	40
+	.	66	39
+	+	65	37
+	+	66	39
+
+> /usr/share/themes/Greybird/metacity-1/metacity-theme-2.xml
+	"	66	39
+	^	66	40
+	.	66	39
+	+	65	37
+	+	66	39
+
+> /usr/share/themes/Orion/metacity-1/metacity-theme-3.xml
+	"	64	39
+	^	64	40
+	.	64	39
+	+	63	37
+	+	64	39
+
+> /var/cache/apt/archives/option-window
+	"	1	0
+	.	916	0
+	+	916	0
+
+> ~/cluster/rep/cluster.c
+	"	760	6
+
+> ~/cluster/rep/cluster.f90
+	"	553	26
+	^	553	27
+	.	553	26
+	+	530	0
+	+	530	0
+	+	501	32
+	+	503	34
+	+	510	0
+	+	503	34
+	+	512	0
+	+	511	20
+	+	512	11
+	+	503	33
+	+	511	19
+	+	510	9
+	+	512	8
+	+	504	39
+	+	505	0
+	+	512	44
+	+	513	29
+	+	528	21
+	+	514	33
+	+	515	50
+	+	517	31
+	+	520	33
+	+	523	28
+	+	526	31
+	+	527	27
+	+	546	59
+	+	545	0
+	+	545	0
+	+	534	21
+	+	540	25
+	+	541	18
+	+	536	34
+	+	539	0
+	+	541	39
+	+	542	27
+	+	543	48
+	+	544	29
+	+	43	44
+	+	509	0
+	+	508	0
+	+	516	16
+	+	504	24
+	+	516	36
+	+	519	37
+	+	43	60
+	+	499	0
+	+	482	59
+	+	481	0
+	+	481	0
+	+	474	25
+	+	478	16
+	+	476	30
+	+	480	0
+	+	478	28
+	+	479	46
+	+	498	60
+	+	497	0
+	+	497	0
+	+	485	19
+	+	494	32
+	+	496	16
+	+	497	22
+	+	495	12
+	+	490	0
+	+	488	27
+	+	508	21
+	+	489	0
+	+	70	38
+	+	72	42
+	+	76	21
+	+	488	24
+	+	479	40
+	+	478	21
+	+	8	41
+	+	488	42
+	+	489	38
+	+	493	0
+	+	490	44
+	+	491	12
+	+	494	36
+	+	491	56
+	+	9	73
+	+	368	8
+	+	370	0
+	+	368	53
+	+	369	35
+	+	362	33
+	+	364	0
+	+	491	32
+	+	492	70
+	+	39	60
+	+	323	0
+	+	322	30
+	+	39	51
+	+	40	30
+	+	315	68
+	+	319	0
+	+	492	66
+	+	554	13
+	+	553	26
+
+> ~/fortran/u6/6_3.f90
+	"	761	0
+
+> ~/cluster/test.f90
+	"	20	41
+	^	20	42
+	.	20	41
+	+	1	12
+	+	1	14
+	+	1	0
+	+	1	0
+	+	1	0
+	+	35	0
+	+	35	0
+	+	28	3
+	+	24	0
+	+	23	0
+	+	23	0
+	+	7	0
+	+	7	0
+	+	6	36
+	+	8	25
+	+	35	0
+	+	36	0
+	+	28	4
+	+	30	24
+	+	31	0
+	+	30	16
+	+	34	0
+	+	33	0
+	+	31	15
+	+	32	34
+	+	29	0
+	+	28	25
+	+	22	0
+	+	11	20
+	+	19	9
+	+	13	30
+	+	14	0
+	+	21	0
+	+	19	19
+	+	20	32
+	+	5	34
+	+	18	0
+	+	16	19
+	+	17	31
+	+	20	41
+
+> ~/cluster/test.f
+	"	1	0
+
+> ~/bin/numbers.sh
+	"	97	1
+	^	97	2
+	.	48	21
+	+	10	19
+	+	11	11
+	+	23	30
+	+	24	39
+	+	48	21
+
+> /usr/share/themes/Ambiance/metacity-1/metacity-theme-1.xml
+	"	16	40
+	^	16	41
+	.	16	40
+	+	15	38
+	+	16	40
+
+> /usr/share/themes/Radiance/metacity-1/metacity-theme-1.xml
+	"	16	40
+	^	16	41
+	.	16	40
+	+	15	38
+	+	16	40
+
+> /usr/share/themes/Radiance/gtk-2.0/apps/gnome-terminal.rc
+	"	1	0
+
+> /usr/share/themes/Radiance/gtk-2.0/gtkrc
+	"	1	0
+
+> /usr/share/ubuntu-tweak/ubuntu-tweak-daemon
+	"	1	0
+
+> /usr/share/ubuntu-tweak/script-worker
+	"	152	0
+
+> /usr/share/ubuntu-tweak/scripts/browse-as-root
+	"	3	79
+
+> /usr/share/ubuntu-tweak/ui/preferences.ui
+	"	36	20
+
+> /usr/share/ubuntu-tweak/ui/window.ui
+	"	1	0
+
+> /usr/share/unity-2d/spread/Windows.qml
+	"	13	1
+
+> /usr/share/unity-2d/spread/Window.qml
+	"	90	14
+
+> /usr/share/X11/xman.help
+	"	89	0
+
+> /usr/share/X11/xkb/geometry.dir
+	"	1	0
+
+> /usr/share/X11/locale/locale.dir
+	"	1	0
+
+> /usr/share/X11/xorg.conf.d/51-synaptics-quirks.conf
+	"	1	0
+
+> /usr/share/X11/xorg.conf.d/10-evdev.conf
+	"	1	0
+
+> /usr/share/X11/rgb.txt
+	"	1	0
+
+> /usr/share/xsessions/gnome-shell.desktop
+	"	1	0
+
+> /usr/share/xsessions/gnome.desktop
+	"	1	0
+
+> /usr/share/xsessions/ubuntu.desktop
+	"	1	0
+
+> /usr/share/xsessions/ubuntu-2d.desktop
+	"	1	0
+
+> /usr/share/dict/words
+	"	1	0
+
+> /usr/share/dict/american-english
+	"	243	0
+
+> /usr/share/dict/README.select-wordlist
+	"	1	0
+
+> /usr/share/compizconfig/normal.profile
+	"	183	18
+	^	183	20
+	.	183	18
+	+	183	18
+
+> /usr/share/compizconfig/extra.profile
+	"	183	18
+	^	183	20
+	.	183	18
+	+	183	18
+
+> /tmp/.X0-lock
+	"	1	6
+
+> /usr/share/compiz/core.xml
+	"	1456	16
+
+> /usr/share/compiz/scale.xml
+	"	107	0
