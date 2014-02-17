@@ -1,7 +1,7 @@
 ## Main
 # main
 snippet main
-	int main(int argc, const char *argv[])
+	int main(int argc, char *argv[])
 	{
 		${0}
 		return 0;
@@ -19,7 +19,7 @@ snippet mainn
 snippet inc
 	#include <${1:stdio}.h>
 # #include "..."
-snippet Inc
+snippet Inic
 	#include "${1:`vim_snippets#Filename("$1.h")`}"
 # ifndef...define...endif
 snippet ndef
@@ -235,3 +235,28 @@ snippet gpl
 	 */
 
 	${0}
+##
+## MPI snippets
+# MPI_Init
+snippet mpi_init
+	int ${1:id}, ${2:np};
+	MPI_Comm ${3:comm_world};
+	MPI_Status status;
+
+	MPI_Init(&argc, &argv);
+	MPI_Comm_rank($3,$1);
+	MPI_Comm_size($3,$2);
+		${4}
+	MPI_Finalize();
+# MPI_Send
+snippet mpi_send
+	MPI_Send(${1:buf}, ${2:count}, ${3:type}, ${4:dest}, ${5:tag}, ${6:comm});
+# MPI_Recv
+snippet mpi_rec
+	MPI_Recv(${1:buf}, ${2:count}, ${3:type}, ${4:src}, ${5:tag}, ${6:comm}, ${7:status});
+# MPI_Bcast
+snippet mpi_bcast
+	MPI_Bcast(${1:buf}, ${2:count}, ${3:type}, ${4:root}, ${5:comm});
+# MPI_Reduce
+snippet mpi_reduce
+	MPI_Reduce(${1:sbuf}, ${2:rbuf}, ${3:count}, ${4:type}, ${5:op}, ${6:root}, ${7:comm});
