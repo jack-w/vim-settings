@@ -22,4 +22,4 @@ function! TexCompile()
     call system('evince ' . substitute(l:texfile,".tex",".pdf","") . "&")
 endfunction
 
-nnoremap <buffer> <localleader>0 :call TexCompile()<cr>
+nnoremap <buffer> <localleader><space> :call TexCompile()<cr>
