@@ -4,7 +4,8 @@ endif
 
 function! TexCompile()
     execute ":w"
-    let logg = system(g:tex_command . " " . bufname("%"))
+    let l:texfile = bufname("%")
+    let logg = system(g:tex_command . " " . l:texfile)
     
     let bnum = bufwinnr("__tex_log__")
     
@@ -18,6 +19,7 @@ function! TexCompile()
     setlocal buftype=nofile
 
     call append(0, split(logg, '\v\n'))
+    call system('evince ' . substitute(l:texfile,".tex",".pdf","") . "&")
 endfunction
 
 nnoremap <buffer> <localleader>0 :call TexCompile()<cr>
