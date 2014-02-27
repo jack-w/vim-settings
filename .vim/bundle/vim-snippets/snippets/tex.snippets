@@ -227,6 +227,12 @@ snippet frac
 	\frac{${1:num}}{${2:denom}} ${0}
 snippet sum
 	\sum^{${1:n}}_{${2:i=1}} ${0}
+snippet Sum
+	\sum\limits^{${1:n}}_{${2:i=1}} ${0}
+snippet int
+	\int^{${1:\infty}}_{${2:-\infty}} ${0}
+snippet Int
+	\int\limits^{${1:\infty}}_{${2:-\infty}} ${0}
 snippet lim
 	\lim_{${1:x \to +\infty}} ${0}
 snippet frame
@@ -256,3 +262,96 @@ snippet col2
 			${0}
 		\end{column}
 	\end{columns}
+
+
+
+
+
+#  standard header  "documentclass, packages, etc." #
+snippet header 
+	\documentclass[a4paper, DIV12, BCOR10mm, twoside, appendixprefix]{scrreprt}
+
+	\usepackage[utf8]{inputenc}
+	\usepackage[english]{babel}
+	\usepackage{lmodern}
+	\usepackage[T1]{fontenc}
+
+	\usepackage{amsmath}
+	\usepackage{amssymb}
+	\usepackage{tikz}
+	\usepackage{placeins}
+	\usepackage{graphicx}
+	%\usepackage{bbm}
+	\usepackage[colorlinks=true, linkcolor=black, citecolor=black]{hyperref}
+
+
+	\usepackage[automark]{scrpage2}
+	\clearscrheadings
+	\clearscrplain
+	\clearscrheadfoot
+	\rehead{\leftmark}
+	\lohead{\rightmark}
+	%\automark[section]{chapter}
+	\ohead[]{\pagemark}
+	\cfoot[\pagemark]{}
+	%\pagestyle{scrplain}
+	\pagestyle{scrheadings}
+	\setkomafont{pageheadfoot}{\scshape\scriptsize}
+	\setkomafont{pagenumber}{\normalfont\small}
+	\setkomafont{disposition}{\rmfamily\bfseries\boldmath}
+	\setkomafont{descriptionlabel}{\rmfamily\bfseries\boldmath}
+	\setheadsepline{0.001pt}
+
+
+	\setcapindent{0.1em}
+	\newcommand{\cit}[1]{\textsuperscript{\cite{#1}}}
+	\setkomafont{captionlabel}{\scriptsize \bf}
+	\setkomafont{caption}{\scriptsize}
+
+
+	\newcommand{\Tr}{\mathrm{Tr}\,}
+	\newcommand{\de}{\mathrm{d}}
+	\newcommand{\ex}{\mathrm{e}}
+	\newcommand{\im}{\mathrm{i}}
+	\newcommand{\ket}[1]{\left|#1\right >} %ket
+	\newcommand{\bra}[1]{\left<#1\right|\!}% bra
+	\newcommand{\braket}[2]{\left < #1\, \right |\left . #2 \right  >}
+	%\xrightarrow[bottom]{top} beliebig lange pfeile
+
+	% identity symbol
+	\newcommand{\id}{
+		\ensuremath
+		\mathalpha{
+			\text{
+				1\kern-0.25em{\raisebox{0.177em}{\scalebox{.7}{|}}}
+			}
+		}
+	}
+	% identity matrix (i.e. 1 with double strokes)
+	\def\idee{\mathchoice%
+	 {\displaystyle{
+	  \displaystyle{\mathchar'61}\mkern-4.4mu{\scalebox{0.975}{$\mathchar'154$}}
+	 }}%
+	 {\textstyle{
+	  \textstyle{\mathchar'61}\mkern-4.4mu\scalebox{.975}{$\textstyle{\mathchar'154}$}
+	 }}%
+	 {\scriptstyle{
+	  \scriptstyle{\mathchar'61}\mkern-4.4mu\scalebox{0.975}{$\scriptstyle{\mathchar'154}$}
+	 }}%
+	 {\scriptscriptstyle{
+	  \scriptscriptstyle{\mathchar'61}\mkern-4.4mu\scalebox{0.975}{$\scriptscriptstyle{\mathchar'154}$}
+	 }}
+	}
+
+
+
+	\delimitershortfall= 0pt
+	\delimiterfactor=1020
+
+
+	\begin{document}
+
+	${1}
+
+	\end{document}
+

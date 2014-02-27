@@ -81,9 +81,12 @@ endfunction
 
 "filetype mappings {{{
 augroup commen
+    autocmd!
     autocmd filetype python nnoremap <buffer> <localleader>c I#<esc>
     autocmd filetype sh nnoremap <buffer> <localleader>c I#<esc>
     autocmd filetype c nnoremap <buffer> <localleader>c 0i//<esc>
+    autocmd filetype c vnoremap <buffer> <localleader>C I//<esc>
+    autocmd filetype c vnoremap <buffer> <localleader>c I/*<esc>gvA*/<esc>
 augroup END
 
 augroup ft_html
