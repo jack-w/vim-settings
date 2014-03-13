@@ -43,6 +43,19 @@ augroup END
 "general mappings {{{
 let mapleader = "-"
 let maplocalleader = "@"
+" hjrl `arrowkeys` for neo-layout
+nnoremap s h
+nnoremap n j
+nnoremap r k
+nnoremap t l
+vnoremap s h
+vnoremap n j
+vnoremap r k
+vnoremap t l
+" escape on rn (neo-layout, usually kj)
+nnoremap rn <esc>
+vnoremap rn <esc>
+inoremap rn <esc>
 " edit and source the .vimrc file
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>el :source $MYVIMRC<cr>
