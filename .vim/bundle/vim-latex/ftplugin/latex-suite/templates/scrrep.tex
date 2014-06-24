@@ -1,0 +1,72 @@
+<+	+>	!comp!	!exe!
+%        File: !comp!expand("%:p:t")!comp!
+%     Created: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+% Last Change: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+%
+
+\documentclass[a4paper, DIV12, BCOR10mm, twoside, appendixprefix]{scrreprt}
+\usepackage[]{standalone} 
+\makeatletter\def\gnuplottexextension@tikz{\string tex}\makeatother
+
+%This template uses lualatex, hence no inputenc
+\usepackage[]{polyglossia} 
+\usepackage{lmodern}
+\usepackage[]{fontspec} 
+\defaultfontfeatures{Ligatures=TeX}
+
+\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage[]{unicode-math} 
+%\usepackage[]{lualatex-math} 
+\usepackage{tikz}
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage[]{gnuplottex} 
+%\usepackage[]{gnuplot-lua-tikz}
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black]{hyperref}
+
+
+\usepackage[automark]{scrpage2}
+\clearscrheadings
+\clearscrplain
+\clearscrheadfoot
+\rehead{\leftmark}
+\lohead{\rightmark}
+%\automark[section]{chapter}
+\ohead[]{\pagemark}
+\cfoot[\pagemark]{}
+%\pagestyle{scrplain}
+\pagestyle{scrheadings}
+\setkomafont{pageheadfoot}{\scshape\scriptsize}
+\setkomafont{pagenumber}{\normalfont\small}
+\setkomafont{disposition}{\rmfamily\bfseries\boldmath}
+\setkomafont{descriptionlabel}{\rmfamily\bfseries\boldmath}
+\setheadsepline{0.001pt}
+
+
+\setcapindent{0.1em}
+\newcommand{\cit}[1]{\textsuperscript{\cite{#1}}}
+\setkomafont{captionlabel}{\scriptsize \bf}
+\setkomafont{caption}{\scriptsize}
+
+
+\newcommand{\Tr}{\mathrm{Tr}\,}
+\newcommand{\de}{\mathrm{d}}
+\newcommand{\ex}{\mathrm{e}}
+\newcommand{\im}{\mathrm{i}}
+\newcommand{\id}{\Bbone} 
+\newcommand{\ket}[1]{\left|#1\right >} %ket
+\newcommand{\bra}[1]{\left<#1\right|\!}% bra
+\newcommand{\braket}[2]{\left < #1\, \right |\left . #2 \right  >}
+%\xrightarrow[bottom]{top} beliebig lange pfeile
+
+
+
+\delimitershortfall= 0pt
+\delimiterfactor=1020
+
+
+\begin{document}
+<++>
+\end{document}
+
