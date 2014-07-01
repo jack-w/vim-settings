@@ -1127,10 +1127,10 @@ endif
 function! Tex_SetFastCommandMaps()
 	if g:Tex_PromptedCommands != ''
 		if !hasmapto('<Plug>Tex_FastCommandInsert', 'i')
-			imap <silent> <buffer> <F7> <Plug>Tex_FastCommandInsert
+			imap <silent> <buffer> <C-g> <Plug>Tex_FastCommandInsert
 		endif
 		if !hasmapto('<Plug>Tex_FastCommandInsert', 'n')
-			nmap <silent> <buffer> <F7> <Plug>Tex_FastCommandInsert
+			nmap <silent> <buffer> <C-g> <Plug>Tex_FastCommandInsert
 		endif
 		if !hasmapto('<Plug>Tex_FastCommandChange', 'i')
 			imap <silent> <buffer> <S-F7> <Plug>Tex_FastCommandChange
@@ -1139,7 +1139,7 @@ function! Tex_SetFastCommandMaps()
 			nmap <silent> <buffer> <S-F7> <Plug>Tex_FastCommandChange
 		endif
 		if !hasmapto('<Plug>Tex_FastCommandInsert', 'v')
-			vmap <silent> <buffer> <F7> <Plug>Tex_FastCommandInsert
+			vmap <silent> <buffer> <C-g> <Plug>Tex_FastCommandInsert
 		endif
 	endif
 endfunction " }}}
